@@ -1,9 +1,11 @@
 public class Main {
- public static void main(String[] args) {
- Pair<String, Integer> pair1 = new Pair<>("Age", 25);
- Pair<Integer, String> pair2 = new Pair<>(null, "Not Found");
+    public static void main(String[] args) {
 
- System.out.println("Pair 1: " + pair1);
- System.out.println("Pair 2: " + pair2);
- }
+        Pair<String, Integer> pair = Pair.create("Marks", 95);
+        Pair<Integer, Integer> pair1= Pair.create(100, 20);
+
+        System.out.println(pair);
+        System.out.println(pair1);
+    
+    }
 }
